@@ -1,0 +1,14 @@
+HEADER    ethane
+COMPND    ethane                                               
+ATOM      1  C   ???     1       0.382   1.170   1.255
+ATOM      2  C   ???     1       1.912   1.227   1.329
+ATOM      3  H   ???     1      -0.075   2.055   1.756
+ATOM      4  H   ???     1      -0.007   0.253   1.756
+ATOM      5  H   ???     1       0.034   1.157   0.197
+ATOM      6  H   ???     1       2.301   2.144   0.829
+ATOM      7  H   ???     1       2.260   1.240   2.388
+ATOM      8  H   ???     1       2.369   0.342   0.828
+CONECT    2    1
+CONECT    3    1
+CONECT    4    2
+END   

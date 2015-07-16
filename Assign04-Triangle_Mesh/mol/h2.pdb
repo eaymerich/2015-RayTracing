@@ -1,0 +1,5 @@
+HEADER      WRS  H2     A=       0.742
+COMPND    small diamomd
+ATOM      1  H   ???     1       0.371   0.000   0.000
+ATOM      2  H   ???     1      -0.371   0.000   0.000
+END

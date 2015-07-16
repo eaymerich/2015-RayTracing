@@ -1,0 +1,26 @@
+HEADER      WRS  C6H12
+COMPND    CHAIR Cyclohexane
+AUTHOR    W. R. Salzman, Department of Chemistry, University of Arizona, Tucson
+AUTHOR    salzman@arizona.edu
+ATOM      1  C                    .749   1.253   -.237
+ATOM      2  C                   1.460   -.022    .237
+ATOM      3  C                   -.711   1.276    .237
+ATOM      4  H                   1.287   2.154    .145
+ATOM      5  H                    .779   1.303  -1.352
+ATOM      6  C                    .711  -1.276   -.237
+ATOM      7  C                  -1.460    .022   -.237
+ATOM      8  H                   1.517   -.023   1.352
+ATOM      9  H                   2.509   -.038   -.145
+ATOM     10  H                  -1.222   2.192   -.145
+ATOM     11  H                   -.739   1.325   1.352
+ATOM     12  C                   -.749  -1.253    .237
+ATOM     13  H                    .739  -1.325  -1.352
+ATOM     14  H                   1.222  -2.192    .145
+ATOM     15  H                  -1.517    .023  -1.352
+ATOM     16  H                  -2.509    .038    .145
+ATOM     17  H                   -.778  -1.302   1.352
+ATOM     18  H                  -1.287  -2.154   -.145
+
+
+
+END

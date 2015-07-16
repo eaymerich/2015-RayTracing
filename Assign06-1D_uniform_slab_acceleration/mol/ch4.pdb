@@ -1,0 +1,12 @@
+HEADER    Methane
+COMPND    Methane                                                 
+ATOM      1  C   ???     1       0.000   0.000   0.000                                  
+ATOM      2  H   ???     1      -0.778   0.308  -0.734                             
+ATOM      3  H   ???     1       0.583   0.893   0.319                                  
+ATOM      4  H   ???     1      -0.489  -0.461   0.887                                  
+ATOM      5  H   ???     1       0.684  -0.740  -0.472                                  
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1
+END   

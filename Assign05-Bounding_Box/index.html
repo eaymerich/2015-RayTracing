@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<!--
+***************************************
+* University of Central Florida
+* COP6721 Ray Tracing
+* Spring 2015
+* Student: Edward Aymerich
+***************************************
+-->
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8">
+	<title>Assignment 5 - Edward Aymerich</title>
+	<script src="lib/utilities.js"></script>
+	<script src="lib/gl-matrix.js"></script>
+	<script src="mol/pdbParserV1.js"></script>
+	<script src="tri/meshDataVersion1.js"></script>
+	<script src="code.js"></script>
+</head>
+<body onload="main()">
+	<h1>Assignment 5</h1>
+	<h2>CAP6721 Ray Tracing - Spring 2015</h2>
+	<p><b>Student:</b> Edward Aymerich <b>PID:</b> 3167485</p>
+
+	<div>
+		Select device <select id="ComputeDevices"></select><br>
+		Select Mol model <select id="Models"></select>
+		<button id="drawButton" type="button" onclick="compute()"> Draw once </button>
+		<button id="rotateButton" type="button" onclick="doRotate()"> Rotate </button> <br>
+		Select Tri model <select id="TriModels"></select>
+		<button id="drawButtonTri" type="button" onclick="computeTri()"> Draw once </button>
+		<button id="rotateButtonTri" type="button" onclick="doTriRotate()"> Rotate </button> <br>
+		<button id="drawButtonBoth" type="button" onclick="computeBoth()"> Draw Both Models </button>
+		<button id="rotateButtonBoth" type="button" onclick="doBothRotate()"> Rotate Both Models </button>
+	</div>
+
+	<p id="demo">Idle.</p>
+
+	<div id="canvasDiv">
+		<canvas id="canvasElement" width="320" height="240" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+</body>
+</html>

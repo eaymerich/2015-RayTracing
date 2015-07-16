@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+
+<!-- Camera section -->
+<camera>
+	<eye>
+		<x>0.0</x><y>0.0</y><z>2.0</z>
+	</eye>
+	<lookAt>
+		<x>0.0</x><y>-0.2</y><z>0.0</z>
+	</lookAt>
+	<vup>
+		<x>0.0</x><y>1.0</y><z>0.0</z>
+	</vup>
+	<fov>60</fov>
+	<focal_length>2.0</focal_length>
+	<lens_diameter>0.01</lens_diameter>
+</camera>
+
+<!-- Light section -->
+<light>
+	<position>
+		<x>0.0</x><y>0.75</y><z>0.0</z>
+	</position>
+	<normal>
+		<x>0.0</x><y>-1.0</y><z>0.0</z>
+	</normal>
+	<irradiance>
+		<x>5</x><y>5</y><z>5</z>
+	</irradiance>
+	<radius>0.2</radius>
+</light>
+
+
+<!-- Materials section -->
+<material>
+	<id>red</id>
+	<color>
+		<r>0.9</r><g>0.2</g><b>0.2</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>green</id>
+	<color>
+		<r>0.2</r><g>0.9</g><b>0.2</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>blue</id>
+	<color>
+		<r>0.255</r><g>0.412</g><b>0.882</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>yellow</id>
+	<color>
+		<r>0.9</r><g>0.9</g><b>0.1</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>white</id>
+	<color>
+		<r>1.0</r><g>1.0</g><b>1.0</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>cyan</id>
+	<color>
+		<r>0.0</r><g>1.0</g><b>1.0</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>cream</id>
+	<color>
+		<r>1.0</r><g>0.99</g><b>0.82</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>bone</id>
+	<color>
+		<r>0.89</r><g>0.85</g><b>0.79</b><a>1.0</a>
+	</color>
+</material>
+
+<!-- Geometry section -->
+<!--
+<sphere>
+	<center>
+		<x>-0.2</x><y>-0.8</y><z>-0.2</z>
+	</center>
+	<radius>0.2</radius>
+	<matId>yellow</matId>
+</sphere>
+-->
+<sphere>
+	<center>
+		<x>-0.4</x><y>-0.8</y><z>0.2</z>
+	</center>
+	<radius>0.2</radius>
+	<matId>blue</matId>
+</sphere>
+
+
+<!-- Bottom wall -->
+<triangle>
+	<p0><x>1.0</x><y>1.0</y><z>-0.99</z></p0>
+	<p1><x>-1.0</x><y>-1.0</y><z>-0.99</z></p1>
+	<p2><x>1.0</x><y>-1.0</y><z>-0.99</z></p2>
+	<n0><x>0.0</x><y>0.0</y><z>1.0</z></n0>
+	<n1><x>0.0</x><y>0.0</y><z>1.0</z></n1>
+	<n2><x>0.0</x><y>0.0</y><z>1.0</z></n2>
+	<matId>white</matId>
+</triangle>
+<triangle>
+	<p0><x>-1.0</x><y>1.0</y><z>-0.99</z></p0>
+	<p1><x>-1.0</x><y>-1.0</y><z>-0.99</z></p1>
+	<p2><x>1.0</x><y>1.0</y><z>-0.99</z></p2>
+	<n0><x>0.0</x><y>0.0</y><z>1.0</z></n0>
+	<n1><x>0.0</x><y>0.0</y><z>1.0</z></n1>
+	<n2><x>0.0</x><y>0.0</y><z>1.0</z></n2>
+	<matId>white</matId>
+</triangle>
+<!-- ceiling -->
+<triangle>
+	<p0><x>-1.0</x><y>0.99</y><z>1.0</z></p0>
+	<p1><x>-1.0</x><y>0.99</y><z>-1.0</z></p1>
+	<p2><x>1.0</x><y>0.99</y><z>-1.0</z></p2>
+	<n0><x>0.0</x><y>-1.0</y><z>0.0</z></n0>
+	<n1><x>0.0</x><y>-1.0</y><z>0.0</z></n1>
+	<n2><x>0.0</x><y>-1.0</y><z>0.0</z></n2>
+	<matId>white</matId>
+</triangle>
+<triangle>
+	<p0><x>1.0</x><y>0.99</y><z>1.0</z></p0>
+	<p1><x>-1.0</x><y>0.99</y><z>1.0</z></p1>
+	<p2><x>1.0</x><y>0.99</y><z>-1.0</z></p2>
+	<n0><x>0.0</x><y>-1.0</y><z>0.0</z></n0>
+	<n1><x>0.0</x><y>-1.0</y><z>0.0</z></n1>
+	<n2><x>0.0</x><y>-1.0</y><z>0.0</z></n2>
+	<matId>white</matId>
+</triangle>
+<!-- floor -->
+<triangle>
+	<p0><x>-1.0</x><y>-0.99</y><z>1.0</z></p0>
+	<p1><x>1.0</x><y>-0.99</y><z>1.0</z></p1>
+	<p2><x>1.0</x><y>-0.99</y><z>-1.0</z></p2>
+	<n0><x>0.0</x><y>1.0</y><z>0.0</z></n0>
+	<n1><x>0.0</x><y>1.0</y><z>0.0</z></n1>
+	<n2><x>0.0</x><y>1.0</y><z>0.0</z></n2>
+	<matId>white</matId>
+</triangle>
+<triangle>
+	<p0><x>1.0</x><y>-0.99</y><z>-1.0</z></p0>
+	<p1><x>-1.0</x><y>-0.99</y><z>-1.0</z></p1>
+	<p2><x>-1.0</x><y>-0.99</y><z>1.0</z></p2>
+	<n0><x>0.0</x><y>1.0</y><z>0.0</z></n0>
+	<n1><x>0.0</x><y>1.0</y><z>0.0</z></n1>
+	<n2><x>0.0</x><y>1.0</y><z>0.0</z></n2>
+	<matId>white</matId>
+</triangle>
+<!-- left wall -->
+<triangle>
+	<p0><x>-0.99</x><y>0.99</y><z>-1.0</z></p0>
+	<p1><x>-0.99</x><y>-0.99</y><z>1.0</z></p1>
+	<p2><x>-0.99</x><y>-0.99</y><z>-1.0</z></p2>
+	<n0><x>1.0</x><y>0.0</y><z>0.0</z></n0>
+	<n1><x>1.0</x><y>0.0</y><z>0.0</z></n1>
+	<n2><x>1.0</x><y>0.0</y><z>0.0</z></n2>
+	<matId>red</matId>
+</triangle>
+<triangle>
+	<p0><x>-0.99</x><y>0.99</y><z>-1.0</z></p0>
+	<p1><x>-0.99</x><y>0.99</y><z>1.0</z></p1>
+	<p2><x>-0.99</x><y>-0.99</y><z>1.0</z></p2>
+	<n0><x>1.0</x><y>0.0</y><z>0.0</z></n0>
+	<n1><x>1.0</x><y>0.0</y><z>0.0</z></n1>
+	<n2><x>1.0</x><y>0.0</y><z>0.0</z></n2>
+	<matId>red</matId>
+</triangle>
+<!-- right wall -->
+<triangle>
+	<p0><x>0.99</x><y>0.99</y><z>-1.0</z></p0>
+	<p1><x>0.99</x><y>-0.99</y><z>1.0</z></p1>
+	<p2><x>0.99</x><y>0.99</y><z>1.0</z></p2>
+	<n0><x>-1.0</x><y>0.0</y><z>0.0</z></n0>
+	<n1><x>-1.0</x><y>0.0</y><z>0.0</z></n1>
+	<n2><x>-1.0</x><y>0.0</y><z>0.0</z></n2>
+	<matId>green</matId>
+</triangle>
+<triangle>
+	<p0><x>0.99</x><y>0.99</y><z>-1.0</z></p0>
+	<p1><x>0.99</x><y>-0.99</y><z>-1.0</z></p1>
+	<p2><x>0.99</x><y>-0.99</y><z>1.0</z></p2>
+	<n0><x>-1.0</x><y>0.0</y><z>0.0</z></n0>
+	<n1><x>-1.0</x><y>0.0</y><z>0.0</z></n1>
+	<n2><x>-1.0</x><y>0.0</y><z>0.0</z></n2>
+	<matId>green</matId>
+</triangle>
+
+<!-- Geometry section: Meshes -->
+
+<mesh>
+	<file>./tri/teapot.json</file>
+	<nslabs>10</nslabs>
+	<normalize>yes</normalize>
+	<scale><x>0.7</x><y>0.7</y><z>0.7</z></scale>
+	<translate><x>0.3</x><y>-0.5</y><z>0.1</z></translate>
+	<matId>cream</matId>
+</mesh>
+
+
+<mesh>
+	<file>./tri/boxes.json</file>
+	<nslabs>5</nslabs>
+	<normalize>yes</normalize>
+	<scale><x>1.0</x><y>1.0</y><z>1.0</z></scale>
+	<translate><x>0.0</x><y>-0.7</y><z>0.0</z></translate>
+	<matId>bone</matId>
+</mesh>
+
+
+</scene>

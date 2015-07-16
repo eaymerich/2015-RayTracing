@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+
+<!-- Camera section -->
+<camera>
+	<eye>
+		<x>5.0</x><y>8.0</y><z>8.0</z>
+	</eye>
+	<lookAt>
+		<x>0.0</x><y>0.0</y><z>0.0</z>
+	</lookAt>
+	<vup>
+		<x>0.0</x><y>1.0</y><z>0.0</z>
+	</vup>
+	<fov>60</fov>
+</camera>
+
+<!-- Light section -->
+<light>
+	<position>
+		<x>0.0</x><y>4.0</y><z>0.0</z>
+	</position>
+</light>
+
+<!-- Materials section -->
+<material>
+	<id>red</id>
+	<color>
+		<r>0.9</r><g>0.1</g><b>0.1</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>green</id>
+	<color>
+		<r>0.1</r><g>0.9</g><b>0.1</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>blue</id>
+	<color>
+		<r>0.1</r><g>0.1</g><b>0.9</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>yellow</id>
+	<color>
+		<r>0.9</r><g>0.9</g><b>0.1</b><a>1.0</a>
+	</color>
+</material>
+
+<material>
+	<id>white</id>
+	<color>
+		<r>0.9</r><g>0.9</g><b>0.9</b><a>1.0</a>
+	</color>
+</material>
+
+<!-- Geometry section -->
+<sphere>
+	<center>
+		<x>-3.0</x><y>0.0</y><z>0.0</z>
+	</center>
+	<radius>1.0</radius>
+	<matId>red</matId>
+</sphere>
+
+<sphere>
+	<center>
+		<x>3.0</x><y>0.0</y><z>0.0</z>
+	</center>
+	<radius>1.0</radius>
+	<matId>green</matId>
+</sphere>
+
+<sphere>
+	<center>
+		<x>0.0</x><y>0.0</y><z>-3.0</z>
+	</center>
+	<radius>1.0</radius>
+	<matId>blue</matId>
+</sphere>
+
+<sphere>
+	<center>
+		<x>0.0</x><y>0.0</y><z>3.0</z>
+	</center>
+	<radius>1.0</radius>
+	<matId>yellow</matId>
+</sphere>
+
+<sphere>
+	<center>
+		<x>0.0</x><y>-1001.0</y><z>0.0</z>
+	</center>
+	<radius>1000.0</radius>
+	<matId>white</matId>
+</sphere>
+
+</scene>

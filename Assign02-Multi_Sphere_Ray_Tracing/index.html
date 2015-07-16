@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<!--
+***************************************
+* University of Central Florida
+* COP6721 Ray Tracing
+* Spring 2015
+* Student: Edward Aymerich
+***************************************
+-->
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8">
+	<title>Assignment 2 - Edward Aymerich</title>
+	<script src="lib/utilities.js"></script>
+	<script src="mol/pdbParserV1.js"></script>
+	<script src="code.js"></script>
+</head>
+<body onload="main()">
+	<h1>Assignment 2</h1>
+	<h2>CAP6721 Ray Tracing - Spring 2015</h2>
+	<p><b>Student:</b> Edward Aymerich <b>PID:</b> 3167485</p>
+
+	<div>
+		Select device <select id="ComputeDevices"></select><br>
+		Select model <select id="Models"></select>
+		<button id="drawButton" type="button" onclick="compute()"> Draw once </button>
+		<button id="rotateButton" type="button" onclick="doRotate()"> Rotate </button> <br>
+	</div>
+
+	<p id="demo">Idle.</p>
+
+	<div id="canvasDiv">
+		<canvas id="canvasElement" width="320" height="240" style="border:1px solid #d3d3d3;">
+		Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+</body>
+</html>
